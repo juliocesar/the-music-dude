@@ -1,0 +1,51 @@
+*     { margin: 0; padding: 0; -webkit-box-sizing: border-box; -webkit-user-select: none }
+body  { position: absolute; height: 480px; padding: 50px 10px; width: 100%; font: normal 100% "Ubuntu Condensed"; text-align: center; background: #dadcaf }
+p, h1 { color: #211920; text-transform: uppercase }
+p     { margin-bottom: 1em; line-height: 22px; text-align: center }
+h1    { font-size: 1.2em; margin-bottom: 0.25em; text-align: center }
+a     { color: #7e0601; text-decoration: none }
+footer { position: fixed; left: 0; bottom: 0; width: 100%; height: 0; opacity: 0; background: rgba(0, 0, 0, .9); -webkit-transition: all 0.3s ease-out }
+footer p { line-height: 40px; padding-left: 10px; color: #fff; text-align: left; overflow: visible }
+button { font-size: 1.1em; padding: 0.5em; margin: 20px 0; background: #7e0601; color: #dcb8ad; border: 0; border-radius: 0.25em; text-transform: uppercase; font-weight: bold }
+#dude, #meta    { display: inline-block; margin-bottom: 30px; vertical-align: middle }
+#dude           { position: relative; height: 100px; width: 85px; margin-right: 10px }
+#head, #phones  { position: absolute }
+#head           { margin-bottom: 20px }
+#phones         { top: -2px; left: 39px }
+#meta       { width: 180px; height: 120px; margin-left: 10px }
+#meta p     { margin: 10px 0 20px }
+#downloading { display: none; position: relative; height: 120px; -webkit-transform: scaleY(0) }
+#downloading > * { position: absolute }
+#downloading p { top: 40px; left: 21px; font: normal 1.1em 'Francois One'; font-weight: bold; color: #dcb7ad; text-shadow: 1px 1px 0 #3a0708, 2px 2px 0 #3a0708, 3px 3px 0 #3a0708, 4px 3px 0 #3a0708, 5px 3px 0 #3a0708; -webkit-transform: rotate(-5deg) }
+#downloading svg { top: -15px; -webkit-animation: 8s rotate linear infinite }
+#grab, #downloading { -webkit-transition: all 0.2s ease-out; -webkit-transform-origin: center }
+
+@-webkit-keyframes pump {
+  0%    { -webkit-transform: scale3d(1, 1, 0); opacity: 1 }
+  20%   { -webkit-transform: scale3d(1.2, 1.1, 1) }
+  50%   { -webkit-transform: scale3d(1, 1, 0); opacity: 1 }
+  100%  { -webkit-transform: scale3d(1, 1, 0); opacity: 1 }
+}
+@-webkit-keyframes pass {
+  from  { -webkit-transform: translate3d(100%, 0, 0) }
+  to    { -webkit-transform: translate3d(-100%, 0, 0) }
+}
+@-webkit-keyframes rotate {
+  from  { -webkit-transform: rotate(0deg) }
+  to    { -webkit-transform: rotate(360deg) }
+}
+@-webkit-keyframes swingit {
+  0%  { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }
+  20% { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }
+  25% { -webkit-transform: rotate(-5deg) translate3d(-5px, 5px, 0) }
+  30% { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }
+  45% { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }
+  50% { -webkit-transform: rotate(-5deg) translate3d(-5px, 5px, 0) }
+  55% { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }
+  65% { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }
+  70% { -webkit-transform: rotate(-5deg) translate3d(-5px, 5px, 0) }
+  75% { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }  
+  90% { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }
+  95% { -webkit-transform: rotate(-5deg) translate3d(-5px, 5px, 0) }
+  100% { -webkit-transform: rotate(0deg) translate3d(0, 0, 0) }
+}

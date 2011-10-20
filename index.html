@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="Julio Cesar Ody">
+    <title>The Music Dude</title>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Francois+One" rel="stylesheet">
+    <link href="/css/musicdude.css" rel="stylesheet" media="all">
+  </head>
+  <body>
+    <section id="dude">
+      <svg id="phones" version="1.0" x="0px" y="0px" width="23px" height="60px" viewBox="0 0 23 60" overflow="visible" enable-background="new 0 0 23 60" fill="#7e0601">
+        <path d="M11.494,36.609C5.156,36.609,0,41.766,0,48.104s5.156,11.494,11.494,11.494c6.339,0,11.495-5.156,11.495-11.494
+        	S17.833,36.609,11.494,36.609z"/>
+        <path d="M16.111,0H6.879c-1.021,0-1.85,0.828-1.85,1.85v0.713v32.085c1.957-0.944,4.149-1.475,6.465-1.475s4.509,0.529,6.467,1.475
+        	V1.85C17.961,0.828,17.132,0,16.111,0z"/>
+      </svg>
+      <svg id="head" version="1.0" x="0px" y="0px" width="82px" height="97px" viewBox="0 0 82 97" overflow="visible" enable-background="new 0 0 82 97" fill="#7e0601">
+        <path d="M60.382,3.098v31.015c3.082,2.737,5.027,6.725,5.027,11.162c0,8.232-6.696,14.93-14.93,14.93
+        	c-8.231,0-14.929-6.697-14.929-14.93c0-4.437,1.946-8.425,5.028-11.162V0C25.546,1.923,12.392,13.527,9.457,26.197
+        	C8.744,29.281,7.936,37.34,7.936,37.34L0.229,56.792C0.075,57.139,0,57.54,0,57.95c0,1.643,1.326,2.977,2.977,2.977h4.958v10.334
+        	c0,8.062,6.52,14.591,14.573,14.591h5.793V97.17h21.527h17.929V65.783c8.604-6.766,14.141-17.282,14.141-29.076
+        	C81.898,21.796,73.085,8.952,60.382,3.098z M18.619,44.71c-2.293,0-4.153-1.859-4.153-4.152c0-2.286,1.861-4.14,4.153-4.14
+        	c2.273,0,4.138,1.854,4.138,4.14C22.759,42.852,20.893,44.71,18.619,44.71z"/>
+      </svg>
+    </section>
+    <section id="meta">
+      <p id="grab">
+        <button>Grab a tune</button>
+      </p>
+      <div id="downloading">
+        <svg version="1.0" x="0px" y="0px" width="160px" height="160px" viewBox="0 0 374 350" enable-background="new 0 0 374 350">
+          <g>
+          	<polygon fill="#770602" points="369.739,175.179 345.206,202.059 358.105,236.089 325.393,252.076 325.168,288.474 288.92,292.011 
+          		276.357,326.186 240.985,317.506 217.977,345.734 187.239,326.179 156.5,345.734 133.492,317.506 98.12,326.186 85.556,292.01 
+          		49.309,288.474 49.084,252.077 16.372,236.087 29.272,202.058 4.739,175.179 29.272,148.3 16.372,114.269 49.084,98.28 
+          		49.309,61.883 85.557,58.347 98.12,24.171 133.493,32.852 156.5,4.624 187.239,24.179 217.976,4.624 240.985,32.852 
+          		276.358,24.172 288.921,58.348 325.169,61.884 325.394,98.281 358.106,114.27 345.206,148.3 	"/>
+          	<polygon fill="none" stroke="#BB7500" stroke-width="7" stroke-miterlimit="10" points="369.739,175.179 345.206,202.059 
+          		358.105,236.089 325.393,252.076 325.168,288.474 288.92,292.011 276.357,326.186 240.985,317.506 217.977,345.734 
+          		187.239,326.179 156.5,345.734 133.492,317.506 98.12,326.186 85.556,292.01 49.309,288.474 49.084,252.077 16.372,236.087 
+          		29.272,202.058 4.739,175.179 29.272,148.3 16.372,114.269 49.084,98.28 49.309,61.883 85.557,58.347 98.12,24.171 133.493,32.852 
+          		156.5,4.624 187.239,24.179 217.976,4.624 240.985,32.852 276.358,24.172 288.921,58.348 325.169,61.884 325.394,98.281 
+          		358.106,114.27 345.206,148.3 	"/>
+          </g>
+        </svg>
+        <p>
+          Downloading
+        </p>
+      </div>
+    </section>
+    <p>
+      The Music Dude is an experiment by
+      <a href="http://awesomebydesign.com">Julio.</a>
+      There's no good reason for this.
+    </p>
+    <p>
+      No sound = no point.
+    </p>
+    <p>
+      Grab <a href="http://github.com/juliocesar/the-music-dude">the source</a>.
+    </p>
+    <footer>
+      <p>Beastie Boys - Make Some Noise</p>
+    </footer>
+    <script>
+      // Since this isn't a library, I'm gonna go ahead and anger the pros.
+      Object.prototype.on = function(e, fn) { return this.addEventListener(e, fn); };
+      Object.prototype.css = function(p, v) { this.style[p] = v; return this; }; // chainable .css()
+      Array.prototype.random = function() { return this[ Math.floor( Math.random() * this.length ) ] };
+
+      function $(q) { // Poor man's jquery with cache. Always returns the first element.
+        if (!$.c) $.c = {};
+        if ($.c[q]) return $.c[q];
+        return $.c[q] = document.querySelectorAll(q)[0];
+      }
+      Player = (function() {
+        var library = [ // The music library.
+          ['ndp.mp3', 'Beastie Boys - Non Disco Powerpack'],
+          ['tmr.mp3', 'Beastie Boys - Too Many Rappers'],
+          ['poi.mp3', 'Prodigy - Poison'],
+          ['gb.mp3', 'Ludacris - Get Back']
+        ];
+        var playing; // Song currently playing.
+
+        var tune = new Audio();
+        tune.on('canplay',    tune.play);
+        tune.on('ended',      next);
+        tune.on('play',       showGrab);
+        tune.on('play',       updateFooter);
+        tune.on('play',       shakeIt);
+        tune.on('loadstart',  showLoading);
+
+        function next() {
+          var song = library.random();
+          tune.src = '/media/' + song[0];
+          tune.load();
+          playing = song[1];
+        }
+
+        function updateFooter() {
+          $('footer').css('height', '0px').css('height', '0');
+          setTimeout(function() {
+            $('footer p').innerHTML = playing;
+            $('footer').css('height', '40px').css('opacity', '1');
+          }, 300);
+        }
+
+        function showGrab() {
+          $('#dude').css('-webkit-animation-play-state', '');
+          $('#phones').css('-webkit-animation-play-state', '');
+          $('#downloading').css('-webkit-transform', 'scaleY(0)');
+          setTimeout(function() {
+            $('#downloading').css('display', 'none');
+            $('#grab').css('display', 'block');
+            $('#grab').css('-webkit-transform', 'scaleY(1)');
+          }, 200);
+        }
+
+        function showLoading() {
+          $('#dude').css('-webkit-animation-play-state', 'paused');
+          $('#phones').css('-webkit-animation-play-state', 'paused');
+          $('#grab').css('-webkit-transform', 'scaleY(0)');
+          setTimeout(function() {
+            $('#grab').css('display', 'none');
+            $('#downloading').css('display', 'block');
+            $('#downloading').css('-webkit-transform', 'scaleY(1)');
+          }, 200);
+        }
+
+        function shakeIt() {
+          $('#phones').css('-webkit-animation', '0.4s pump linear infinite')
+          $('#dude').css('-webkit-animation', '3.5s swingit linear infinite');
+          $('footer p').css('-webkit-animation', '13s pass linear infinite');
+        };
+
+        return { next : next };
+      })();
+      window.on('orientationchange', function() { window.scrollTo(0, 1); });
+      document.on('DOMContentLoaded', function() { window.scrollTo(0, 1); });
+      $('#grab button').on('click', Player.next);
+    </script>
+  </body>
+</html>
