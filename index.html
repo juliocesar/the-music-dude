@@ -7,7 +7,7 @@
     <meta name="author" content="Julio Cesar Ody">
     <title>The Music Dude</title>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Francois+One" rel="stylesheet">
-    <link href="/css/musicdude.css" rel="stylesheet" media="all">
+    <link href="css/musicdude.css" rel="stylesheet" media="all">
   </head>
   <body>
     <section id="dude">
@@ -95,7 +95,7 @@
 
         function next() {
           var song = library.random();
-          tune.src = '/media/' + song[0];
+          tune.src = 'media/' + song[0];
           tune.load();
           playing = song[1];
         }
